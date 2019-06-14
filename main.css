@@ -1,5 +1,11 @@
+/* Background Image */
+body {
+    background: url(background.jpg) no-repeat center;
+    background-size: cover;
+}
 
-/* Bootstrap Navbar */
+
+/* Bootstrap Auto generated Navbar styling */
 .navbar-custom {
     background-color: #0747a6;
     border-color: #063986;
