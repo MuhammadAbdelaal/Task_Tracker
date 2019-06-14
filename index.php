@@ -16,13 +16,17 @@
   <body>
 
     <!-- Navigation Bar with login Button-->
-
     <nav class="navbar navbar-custom bg-light">
-    <a class="navbar-brand mb-0 h1" href="#">Task Tracker</a>
-    <a class="btn btn-light" href="#">Login</a>
+        <a class="navbar-brand mb-0 h1" href="#">Task Tracker</a>
+        <a class="btn btn-light" href="#">Login</a>
     </nav>
     
     <!-- Jumbotron with Sign up Button -->
+    <div class="jumbotron">
+        <h1>Task Tracker App</h1>    
+        <p>Tracking your Tasks has never been easier.</p>
+        <button type="button" class="btn btn-lg btn-success">Sign Up</button>
+    </div>
 
     <!-- Login Form -->
 
