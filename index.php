@@ -18,7 +18,7 @@
     <!-- Navigation Bar with login Button-->
     <nav class="navbar navbar-custom bg-light">
         <a class="navbar-brand mb-0 h1" href="#">Task Tracker</a>
-        <a class="btn btn-light" href="#">Login</a>
+        <a class="btn btn-light" href="#login_modal" data-toggle="modal">Login</a>
     </nav>
     
     <!-- Jumbotron with Sign up Button -->
@@ -30,7 +30,37 @@
     </div>
 
     <!-- Login Form -->
-    
+    <form method="post" id="login_form">
+        <div class="modal" id="login_modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Login to your account</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <!-- Login message from PHP file -->
+                        <div class="login-message">
+                            
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="login-email" placeholder="Enter your email" maxlength="50">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="login-password" placeholder="enter your password" maxlength="30">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-outline-primary btn-lg btn-block">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
 
     <!-- Sign up Form -->
     <form method="post" id="signup_form">
@@ -38,7 +68,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Sign Up</h5>
+                        <h5 class="modal-title">Sign Up to create new account</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                         </button>
@@ -63,7 +93,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary btn-lg btn-block">Sign UP</button>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Sign Up</button>
                     </div>
                 </div>
             </div>
