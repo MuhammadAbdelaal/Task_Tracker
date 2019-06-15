@@ -18,6 +18,12 @@ body {
     margin-top: 150px;
 }
 
+/* Avatar image */
+.md-avatar.size-1 {
+    width: 40px;
+    height: 40px;
+}
+
 /* footer */
 .footer {
     position: absolute;
@@ -27,7 +33,6 @@ body {
     padding-top: 10px;
     color: white;
 }
-
 
 
 /* Bootstrap Auto generated Navbar styling */
@@ -145,3 +150,13 @@ body {
   .navbar-custom .navbar-link:hover {
     color: #c0c0c0;
   }
+
+.navbar-right {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-right a {
+    margin-left: 15px;
+}
+
