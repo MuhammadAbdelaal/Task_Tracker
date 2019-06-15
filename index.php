@@ -25,12 +25,50 @@
     <div class="jumbotron">
         <h1>Task Tracker App</h1>    
         <p>Tracking your Tasks has never been easier.</p>
-        <button type="button" class="btn btn-lg btn-success">Sign Up</button>
+        <button type="button" class="btn btn-lg btn-success"
+         data-target="#signup_modal" data-toggle="modal">Sign Up</button>
     </div>
 
     <!-- Login Form -->
+    
 
     <!-- Sign up Form -->
+    <form method="post" id="signup_form">
+        <div class="modal" id="signup_modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Sign Up</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <!-- Signup message from PHP file -->
+                        <div class="signup-message">
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="emailAddress">Email address</label>
+                            <input type="email" class="form-control" id="emailAddress" placeholder="Enter email" maxlength="50">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Chose a Password" maxlength="30">
+                        </div>
+                        <div class="form-group">
+                            <label for="password2">Password</label>
+                            <input type="password" class="form-control" id="password2" placeholder="Confirm your Password" maxlength="30">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Sign UP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
 
     <!-- Forget Password Form -->
 
