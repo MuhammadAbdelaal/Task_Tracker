@@ -34,6 +34,11 @@
 
     <!-- Forget Password Form -->
 
+    <!-- Footer -->
+    <div class="footer">
+        <p>Muhammad Reda Abdelaal Copyright &copy; 2017 -<?php $current_year = date("Y"); echo $current_year; ?> All Rights Reserved</p>
+    </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -1,12 +1,16 @@
+/* html element */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 /* Background Image */
 body {
     background: url(background.jpg) no-repeat center;
     background-size: cover;
 }
 
-
 /* Jumbotron */
-
 .jumbotron {
     background-color: transparent;
     text-align: center;
@@ -14,8 +18,20 @@ body {
     margin-top: 150px;
 }
 
+/* footer */
+.footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    color: white;
+}
+
+
+
 /* Bootstrap Auto generated Navbar styling */
-.navbar-custom {
+.navbar-custom, .footer {
     background-color: #0747a6;
     border-color: #063986;
     background-image: -webkit-gradient(linear, left 0%, left 100%, from(#095cd7), to(#0747a6));
