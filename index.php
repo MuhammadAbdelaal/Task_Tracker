@@ -47,10 +47,12 @@
                             
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="login-email" placeholder="Enter your email" maxlength="50">
+                            <input type="email" name="loginEmail" class="form-control" id="login-email"
+                             placeholder="Enter your email" maxlength="50">
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" id="login-password" placeholder="enter your password" maxlength="30">
+                            <input type="password" name="loginPassword" class="form-control" id="login-password"
+                             placeholder="enter your password" maxlength="30">
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -68,7 +70,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Sign Up to create new account</h5>
+                        <h5 class="modal-title">Sign up to create new account</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                         </button>
@@ -80,20 +82,20 @@
                             
                         </div>
                         <div class="form-group">
-                            <label for="emailAddress">Email address</label>
-                            <input type="email" class="form-control" id="emailAddress" placeholder="Enter email" maxlength="50">
+                            <label for="signupEmail">Email address</label>
+                            <input type="email" name="signupEmail" class="form-control" id="signupEmail" placeholder="Enter email" maxlength="50">
                         </div>
                         <div class="form-group">
-                            <label for="password">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Chose a Password" maxlength="30">
+                            <label for="signupPassword">Password</label>
+                            <input type="password" name="signupPassword" class="form-control" id="signupPassword" placeholder="Chose a Password" maxlength="30">
                         </div>
                         <div class="form-group">
-                            <label for="password2">Password</label>
-                            <input type="password" class="form-control" id="password2" placeholder="Confirm your Password" maxlength="30">
+                            <label for="signupPassword2">Password</label>
+                            <input type="password" name="signupPassword2" class="form-control" id="signupPassword2" placeholder="Confirm your Password" maxlength="30">
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary btn-lg btn-block">Sign Up</button>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Sign up</button>
                     </div>
                 </div>
             </div>
