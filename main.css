@@ -182,6 +182,7 @@ ul.board-info {
   font-size: 18px;
   box-shadow: 0 1px gray;
   background-color: white;
+  margin-bottom: 0;
 }
 
 ul.board-info>li {
@@ -219,4 +220,19 @@ ul.board-users {
 
 ul.board-users li {
   padding-right: 5px;
+}
+
+/* lists table */
+.lists-table {
+  width: 100%;
+}
+
+.lists-table thead {
+  text-align: center;
+  background-color: #0747a6;
+  color: white;
+}
+.lists-table th {
+  border: solid white 2px;
+  padding: 10px 0;
 }
