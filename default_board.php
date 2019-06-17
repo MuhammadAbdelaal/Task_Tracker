@@ -39,7 +39,7 @@
          alt="Avatar" class="md-avatar rounded-circle size-1"></li>
           </ul>
         </li>
-        <li>New Task +</li>
+        <li><button type="button" class="btn btn-primary">New Task +</button></li>
       </ul>
     </div>
     
