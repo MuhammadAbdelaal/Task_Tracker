@@ -1,8 +1,15 @@
+/* global styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /* html element */
 html {
     position: relative;
     min-height: 100%;
 }
+
 
 /* Background Image */
 body {
@@ -151,12 +158,65 @@ body {
     color: #c0c0c0;
   }
 
-.navbar-right {
+/* custom navbar styles */
+  .navbar-right {
     display: flex;
     flex-direction: row;
 }
 
 .navbar-right a {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
+.back-btn {
+  font-size: 30px;
+  vertical-align: top;
+  line-height: 28px;
+}
+
+/* Board info container */
+ul.board-info {
+  list-style-type: none;
+  display: flex;
+  padding: 5px 0;
+  font-size: 18px;
+  box-shadow: 0 1px gray;
+  background-color: white;
+}
+
+ul.board-info>li {
+  padding: 0 5px;
+  margin-right: 50px;
+}
+
+ul.board-info>li:first-child {
+  font-size: 25px;
+  line-height: 60px;
+  color: #0747a6;
+  border-radius: 20px;
+  padding: 0 10px;
+}
+
+ul.board-info>li:last-child {
+  position: absolute;
+  right: 20px;
+  height: 45px;
+  margin: 0;
+  margin-top: 10px;
+  font-size: 20px;
+  line-height: 40px;
+  background-color: #0747a6;
+  color: white;
+  border-radius: 10px;
+  padding: 0 5px;
+}
+
+
+ul.board-users {
+  list-style-type: none;
+  display: flex;
+}
+
+ul.board-users li {
+  padding-right: 5px;
+}

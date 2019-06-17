@@ -17,13 +17,34 @@
 
     <!-- Navigation Bar with Logout Button-->
     <nav class="navbar navbar-custom bg-light">
-        <a class="navbar-brand mb-0 h1" href="#">Default Board</a>
+        <a class="navbar-brand mb-0 h1" href="index.php">
+          <span class="back-btn">&larr;</span>
+          Back to Homepage</a>
         <ul class="nav navbar-nav navbar-right">
         <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
          alt="Avatar" class="md-avatar rounded-circle size-1">
         <a class="btn btn-light" href="#">Logout</a>
         </ul>
     </nav>
+
+    <!-- Board info -->
+    <div class="board-info-container">
+      <ul class="board-info">
+        <li>Default Board</li>
+        <li>People in this project
+          <ul class="board-users">
+            <li><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
+         alt="Avatar" class="md-avatar rounded-circle size-1"></li>
+            <li><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
+         alt="Avatar" class="md-avatar rounded-circle size-1"></li>
+          </ul>
+        </li>
+        <li>New Task +</li>
+      </ul>
+    </div>
+    
+    <!-- Dynamic 3 Lists  -->
+
 
     <!-- Footer -->
     <div class="footer">
