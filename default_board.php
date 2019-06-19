@@ -1,3 +1,11 @@
+<?php
+session_start();
+if(!isset($_SESSION['user_id'])){
+  header("location: index.php");
+  session_destroy();    
+}
+
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -17,13 +25,13 @@
 
     <!-- Navigation Bar with Logout Button-->
     <nav class="navbar navbar-custom bg-light">
-        <a class="navbar-brand mb-0 h1" href="index.php">
-          <span class="back-btn">&larr;</span>
-          Back to Homepage</a>
+        <h2 class="h2-welcomuser">
+          Welcome to Task Tracker <em><strong><?php echo $_SESSION['username']?></strong></em></h2>
         <ul class="nav navbar-nav navbar-right">
-        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
+        <img src="avatar.png"
          alt="Avatar" class="md-avatar rounded-circle size-1">
-        <a class="btn btn-light" href="#">Logout</a>
+         <p class="p-welcomuser"><em><strong><?php echo $_SESSION['username']?></strong></em></p>
+        <a class="btn btn-light" href="index.php?logout=1">Logout</a>
         </ul>
     </nav>
 
@@ -33,9 +41,9 @@
         <li>Default Board</li>
         <li>People in this project
           <ul class="board-users">
-            <li><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
+            <li><img src="avatar.png"
          alt="Avatar" class="md-avatar rounded-circle size-1"></li>
-            <li><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
+            <li><img src="avatar.png"
          alt="Avatar" class="md-avatar rounded-circle size-1"></li>
           </ul>
         </li>

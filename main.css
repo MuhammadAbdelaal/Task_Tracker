@@ -244,3 +244,18 @@ ul.board-users li {
   border: solid white 2px;
   padding: 10px 0;
 }
+
+/* h2 for user welcoming */
+.h2-welcomuser {
+  font-size: 24px;
+  color: white;
+}
+
+/* p for user welcoming */
+.p-welcomuser {
+  font-size: 16px;
+  color: white;
+  line-height: 10px;
+  margin-top: 15px;
+  padding-left: 5px;
+}

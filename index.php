@@ -1,3 +1,13 @@
+<?php
+session_start();
+include('connection.php');
+
+//logout
+include('logout.php');
+
+?>
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -30,7 +40,7 @@
     </div>
 
     <!-- Login Form -->
-    <form method="post" id="login_form">
+    <form method="post" id="loginform">
         <div class="modal" id="login_modal" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -43,15 +53,15 @@
                     
                     <div class="modal-body">
                         <!-- Login message from PHP file -->
-                        <div class="login-message">
+                        <div id="loginmessage">
                             
                         </div>
                         <div class="form-group">
-                            <input type="email" name="loginEmail" class="form-control" id="login-email"
+                            <input type="email" name="loginemail" class="form-control" id="loginemail"
                              placeholder="Enter your email" maxlength="50">
                         </div>
                         <div class="form-group">
-                            <input type="password" name="loginPassword" class="form-control" id="login-password"
+                            <input type="password" name="loginpassword" class="form-control" id="loginpassword"
                              placeholder="enter your password" maxlength="30">
                         </div>
                     </div>
@@ -65,7 +75,7 @@
 
 
     <!-- Sign up Form -->
-    <form method="post" id="signup_form">
+    <form method="post" id="signupform">
         <div class="modal" id="signup_modal" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -78,20 +88,24 @@
                     
                     <div class="modal-body">
                         <!-- Signup message from PHP file -->
-                        <div class="signup-message">
+                        <div id="signupmessage">
                             
                         </div>
                         <div class="form-group">
-                            <label for="signupEmail">Email address</label>
-                            <input type="email" name="signupEmail" class="form-control" id="signupEmail" placeholder="Enter email" maxlength="50">
+                            <label for="username">User Name</label>
+                            <input type="text" name="username" class="form-control" id="username" placeholder="Enter Your Username" maxlength="30">
                         </div>
                         <div class="form-group">
-                            <label for="signupPassword">Password</label>
-                            <input type="password" name="signupPassword" class="form-control" id="signupPassword" placeholder="Chose a Password" maxlength="30">
+                            <label for="email">Email address</label>
+                            <input type="email" name="email" class="form-control" id="email" placeholder="Enter email" maxlength="50">
                         </div>
                         <div class="form-group">
-                            <label for="signupPassword2">Password</label>
-                            <input type="password" name="signupPassword2" class="form-control" id="signupPassword2" placeholder="Confirm your Password" maxlength="30">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" class="form-control" id="password" placeholder="Chose a Password" maxlength="30">
+                        </div>
+                        <div class="form-group">
+                            <label for="password2">Password</label>
+                            <input type="password" name="password2" class="form-control" id="password2" placeholder="Chose a Password" maxlength="30">
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -110,8 +124,19 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+     crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+     crossorigin="anonymous"></script>
+
+    <!-- My Own JavaScript files -->
+    <script src="AjaxCalls.js"></script>
+    <script src="jQuery/jQuery.js"></script>
   </body>
 </html>
