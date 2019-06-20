@@ -47,49 +47,53 @@ if(!isset($_SESSION['user_id'])){
          alt="Avatar" class="md-avatar rounded-circle size-1"></li>
           </ul>
         </li>
-        <li><button type="button" class="btn btn-primary">New Task +</button></li>
+        <li><button id="addTask" type="button" class="btn btn-primary">New Task +</button></li>
       </ul>
     </div>
     
+
     <!-- Dynamic 3 Lists  -->
-    <table class="lists-table">
-    <thead>
-      <th>TO DO</th>
-      <th>IN PROGRESS</th>
-      <th>DONE</th>
-    </thead>  
-    <tbody>
-        <tr>
-          <td>
-            <ul class="list-group">
-              <li class="list-group-item">Cras justo odio</li>
-              <li class="list-group-item">Dapibus ac facilisis in</li>
-              <li class="list-group-item">Morbi leo risus</li>
-              <li class="list-group-item">Porta ac consectetur ac</li>
-              <li class="list-group-item">Vestibulum at eros</li>
-            </ul>
-          </td>
-          <td>
-            <ul class="list-group">
-              <li class="list-group-item">Cras justo odio</li>
-              <li class="list-group-item">Dapibus ac facilisis in</li>
-              <li class="list-group-item">Morbi leo risus</li>
-              <li class="list-group-item">Porta ac consectetur ac</li>
-              <li class="list-group-item">Vestibulum at eros</li>
-            </ul>
-          </td>
-          <td>
-            <ul class="list-group">
-              <li class="list-group-item">Cras justo odio</li>
-              <li class="list-group-item">Dapibus ac facilisis in</li>
-              <li class="list-group-item">Morbi leo risus</li>
-              <li class="list-group-item">Porta ac consectetur ac</li>
-              <li class="list-group-item">Vestibulum at eros</li>
-            </ul>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="grid-table">
+    <!-- Alert message -->
+    <div id='alert' class='alert alert-danger collapse'>
+          <a href="" class='close' data-dismiss='alert'>
+            &times;
+          </a>
+          <p id='alertContent'></p>
+        </div>  
+    <div class="table-head">
+        <div class="table-head-item">TO DO</div>
+        <div class="table-head-item">IN PROGRESS</div>
+        <div class="table-head-item">DONE</div>
+      </div>
+      <div class="table-body">
+          <!-- add task textarea -->
+          <div id='textarea-container'>
+            <textarea name="addtask-textarea" id="addtask-textarea" cols="80" rows="10">
+
+            </textarea>
+            <button id="save" type="button" class="btn btn-success btn-block">SAVE</button>
+          </div>
+        <div id="todoBody">
+        <!-- to be added dynamically -->
+        <!-- 
+        <div class='list-group-item' id='$task_id'>
+                    <div>
+                        <p class='text'>$task</p>
+                        <p class='item-date'>$time</p>
+                    </div>
+                    <p class='delete-task' >&times;</p>
+                </div> -->
+        <div id="inprogressBody">
+        <!-- to be added dynamically -->
+
+        </div>
+        <div id="doneBody">
+        <!-- to be added dynamically -->
+
+        </div>
+      </div>
+    </div>
 
     <!-- Footer -->
     <div class="footer">
@@ -102,5 +106,9 @@ if(!isset($_SESSION['user_id'])){
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- My Own JavaScript files -->
+    <script src="jQuery/jQuery.js"></script>
+    <script src="tasks.js"></script>
   </body>
 </html>
